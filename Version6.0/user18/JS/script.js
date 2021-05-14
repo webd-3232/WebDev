@@ -2,6 +2,10 @@ function changeText() {
     document.getElementById("textChange").innerHTML = "<ul>Thanks for liking my Webpage</u>";
 }
 
+function openWin() {
+    window.open("https://www.w3schools.com","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400, height=400");
+}
+
 function uppercase() {
     var x = document.getElementById("fname");
     x.value = x.value.toUpperCase();
