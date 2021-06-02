@@ -1,7 +1,7 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "5eb340f4dbaa1e66af6a084521beba22"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -28,7 +28,7 @@ $currentTime = time();
 <!doctype html>
 <html>
 <head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
+<title>Curent Shakopee Forecast</title>
 
 <style>
 body {
@@ -69,6 +69,12 @@ span.min-temperature {
 
 </head>
 <body>
+
+<?php
+if ($data->wind->speed > "3"){//Changes the $temp varaible to match 
+    echo("<style>background color</style>");
+}
+?>
 
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
